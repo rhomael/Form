@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Setor NOC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="formulario" class="form">
+            <h2>FORMULÁRIO DE REGISTRO SETOR NOC</h2>
+            <div class="form-group">
+                <label for="dataHora">Data e Hora:</label>
+                <input type="datetime-local" id="dataHora" required>
+            </div>
+            <div class="form-group">
+                <label for="nomeAnalista">Nome do Analista:</label>
+                <input type="text" id="nomeAnalista" required>
+            </div>
+            <div class="form-group">
+                <label for="fabricante">Fabricante:</label>
+                <input type="text" id="fabricante" required>
+            </div>
+            <div class="form-group">
+                <label for="loginCliente">Login do Cliente:</label>
+                <input type="text" id="loginCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="olt">OLT:</label>
+                <input type="text" id="olt" required>
+            </div>
+            <div class="form-group">
+                <label for="vlan">VLAN:</label>
+                <input type="text" id="vlan" required>
+            </div>
+            <div class="form-group">
+                <label for="serialEquipamento">Serial do Equipamento:</label>
+                <input type="text" id="serialEquipamento" required>
+            </div>
+            <div class="form-group">
+                <label for="macAddress">Mac-Address:</label>
+                <input type="text" id="macAddress" required>
+            </div>
+            <div class="form-group">
+                <label for="potencia">Potencia:</label>
+                <input type="text" id="potencia" required>
+            </div>
+            <div class="form-group">
+                <label for="acessoRemoto">Acesso Remoto:</label>
+                <select id="acessoRemoto" required>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="button" id="salvarPlanilha">Salvar Planilha</button>
+        </form>
+    </div>
+    <div class="footer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
